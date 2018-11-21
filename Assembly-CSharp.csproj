@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\AbilitiyHandler.cs" />
     <Compile Include="Assets\Scripts\CameraBillboardScript.cs" />
+    <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\movement.cs" />
     <Compile Include="Assets\Scripts\PlayerAttributes.cs" />
     <None Include="Assets\rpg-tutorial-assets\README.txt" />
