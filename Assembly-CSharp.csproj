@@ -61,12 +61,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\head.cs" />
     <Compile Include="Assets\Scripts\AbilitiyHandler.cs" />
     <Compile Include="Assets\Scripts\CameraBillboardScript.cs" />
+    <Compile Include="Assets\Scripts\chest.cs" />
+    <Compile Include="Assets\Scripts\feet.cs" />
+    <Compile Include="Assets\Scripts\head.cs" />
     <Compile Include="Assets\Scripts\Inventory.cs" />
+    <Compile Include="Assets\Scripts\legs.cs" />
     <Compile Include="Assets\Scripts\movement.cs" />
+    <Compile Include="Assets\Scripts\necklace.cs" />
     <Compile Include="Assets\Scripts\PlayerAttributes.cs" />
+    <Compile Include="Assets\Scripts\ring.cs" />
+    <Compile Include="Assets\Scripts\weapon.cs" />
     <None Include="Assets\rpg-tutorial-assets\README.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Izzy/Documents/GitHub/Game-Start-Up/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

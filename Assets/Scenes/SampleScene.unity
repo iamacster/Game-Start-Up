@@ -192,8 +192,9 @@ GameObject:
   - component: {fileID: 254037614}
   - component: {fileID: 254037616}
   - component: {fileID: 254037615}
+  - component: {fileID: 254037617}
   m_Layer: 5
-  m_Name: Panel (2)
+  m_Name: feet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -229,7 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -251,6 +252,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 254037613}
   m_CullTransparentMesh: 0
+--- !u!114 &254037617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 254037613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737edf1f0b1452f40be470737bfd6783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &284524998
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,15 +288,15 @@ RectTransform:
   m_GameObject: {fileID: 284524998}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99999994, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1584238674}
   m_Father: {fileID: 2066853404}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1.31, y: -6.65}
+  m_AnchoredPosition: {x: 1.3099995, y: -6.6499996}
   m_SizeDelta: {x: 1.7, y: 1.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &284525000
@@ -419,7 +431,7 @@ RectTransform:
   m_Children:
   - {fileID: 2099750582}
   m_Father: {fileID: 2066853404}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -489,7 +501,7 @@ RectTransform:
   m_Children:
   - {fileID: 1726297156}
   m_Father: {fileID: 2066853404}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -792,8 +804,9 @@ GameObject:
   - component: {fileID: 774287342}
   - component: {fileID: 774287344}
   - component: {fileID: 774287343}
+  - component: {fileID: 774287345}
   m_Layer: 5
-  m_Name: Panel (1)
+  m_Name: necklace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -829,7 +842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -851,6 +864,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 774287341}
   m_CullTransparentMesh: 0
+--- !u!114 &774287345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 774287341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227703a6e90f34546890e3833ffea60a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &892720554
 GameObject:
   m_ObjectHideFlags: 0
@@ -1292,7 +1316,7 @@ RectTransform:
   m_Children:
   - {fileID: 1768505345}
   m_Father: {fileID: 2066853404}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -1362,7 +1386,7 @@ RectTransform:
   m_Children:
   - {fileID: 254037614}
   m_Father: {fileID: 2066853404}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -1465,7 +1489,7 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1525069479}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 0}
@@ -1519,8 +1543,9 @@ GameObject:
   - component: {fileID: 1584238674}
   - component: {fileID: 1584238676}
   - component: {fileID: 1584238675}
+  - component: {fileID: 1584238677}
   m_Layer: 5
-  m_Name: Panel (1)
+  m_Name: legs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1541,7 +1566,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00000047684, y: 0.00000047684}
+  m_AnchoredPosition: {x: -0.00000047683716, y: 0.00000047683716}
   m_SizeDelta: {x: -0.00000023841858, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1584238675
@@ -1556,7 +1581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1578,6 +1603,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1584238673}
   m_CullTransparentMesh: 0
+--- !u!114 &1584238677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1584238673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c46cd7398444fb44916e06f3bdbf589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1625016782
 GameObject:
   m_ObjectHideFlags: 0
@@ -1673,8 +1709,9 @@ GameObject:
   - component: {fileID: 1726297156}
   - component: {fileID: 1726297158}
   - component: {fileID: 1726297157}
+  - component: {fileID: 1726297159}
   m_Layer: 5
-  m_Name: Panel (1)
+  m_Name: chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1710,7 +1747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1732,6 +1769,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1726297155}
   m_CullTransparentMesh: 0
+--- !u!114 &1726297159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1726297155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 529d675e70e720749b5d2defe2cee2cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1768505344
 GameObject:
   m_ObjectHideFlags: 0
@@ -1742,8 +1790,9 @@ GameObject:
   - component: {fileID: 1768505345}
   - component: {fileID: 1768505347}
   - component: {fileID: 1768505346}
+  - component: {fileID: 1768505348}
   m_Layer: 5
-  m_Name: Panel (3)
+  m_Name: weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1779,7 +1828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1801,6 +1850,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1768505344}
   m_CullTransparentMesh: 0
+--- !u!114 &1768505348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1768505344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d66648ebb7a975e4a9033e787f8ec56b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1939339991
 GameObject:
   m_ObjectHideFlags: 0
@@ -1813,7 +1873,7 @@ GameObject:
   - component: {fileID: 1939339994}
   - component: {fileID: 1939339993}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1845,7 +1905,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1939339991}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63ad58d5347352b42aa47ed487d728bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 67ec364d60292914ebea7ff32f5b3bd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1939339994
@@ -1860,7 +1920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1893,7 +1953,7 @@ GameObject:
   - component: {fileID: 2066853406}
   - component: {fileID: 2066853405}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Inventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1910,11 +1970,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 892720555}
-  - {fileID: 284524999}
-  - {fileID: 353748897}
   - {fileID: 472606652}
+  - {fileID: 284524999}
   - {fileID: 1480567634}
   - {fileID: 1428818406}
+  - {fileID: 353748897}
   - {fileID: 924304395}
   m_Father: {fileID: 1525069483}
   m_RootOrder: 0
@@ -1968,8 +2028,9 @@ GameObject:
   - component: {fileID: 2099750582}
   - component: {fileID: 2099750584}
   - component: {fileID: 2099750583}
+  - component: {fileID: 2099750585}
   m_Layer: 5
-  m_Name: Panel (2)
+  m_Name: ring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2005,7 +2066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2027,6 +2088,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2099750581}
   m_CullTransparentMesh: 0
+--- !u!114 &2099750585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2099750581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d56c326b78469914eb0ef55fbb91115d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2142027194
 GameObject:
   m_ObjectHideFlags: 0
@@ -2037,7 +2109,7 @@ GameObject:
   - component: {fileID: 2142027195}
   - component: {fileID: 2142027196}
   m_Layer: 0
-  m_Name: Directional Light
+  m_Name: PlayerHighlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

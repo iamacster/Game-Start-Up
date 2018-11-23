@@ -9,7 +9,7 @@ public enum Type { Head, Chest, Arms, Legs, Feet, Melee, Ring, Necklace };
 
 public class Item
 {
-    public Image image;
+    public Sprite sprite;
     public string name;
     public Type type;
     public float strength;
@@ -20,7 +20,7 @@ public class Item
     public float aira;
     public Item(string name, Type t, float s, float d, float w, float e, float h, float a)
     {
-        image = (Image)AssetDatabase.LoadAssetAtPath("Assets/rpg-tutorial-assets/Sprites/Placeholder01.png", typeof(Image));
+        sprite = (Sprite)AssetDatabase.LoadAssetAtPath("Assets/Placeholder01.png", typeof(Sprite));
         type = t;
         strength = s;
         defense = d;
@@ -29,10 +29,10 @@ public class Item
         health = h;
         aira = a;
     }
-    public void newItem(string n,Image i,float s, float d, float w, float e, float h, float a)
+    public void newItem(string n,Sprite i,float s, float d, float w, float e, float h, float a)
     {
         name = n;
-        image = i;
+        sprite = i;
         strength = s;
         defense = d;
         will = w;
