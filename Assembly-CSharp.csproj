@@ -61,7 +61,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\InspectItem.cs" />
     <Compile Include="Assets\Scripts\AbilitiyHandler.cs" />
+    <Compile Include="Assets\Scripts\button.cs" />
     <Compile Include="Assets\Scripts\CameraBillboardScript.cs" />
     <Compile Include="Assets\Scripts\chest.cs" />
     <Compile Include="Assets\Scripts\feet.cs" />

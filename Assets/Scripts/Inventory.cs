@@ -58,6 +58,7 @@ public class Inventory : MonoBehaviour
     bool isDisable;
 	void Start ()
     {
+        Cursor.visible = false;
         Head = new Item("Nothing", Type.Head, 0f, 0f, 0f, 0f, 0f, 0f);
         Chest = new Item("Nothing", Type.Chest, 0f, 0f, 0f, 0f, 0f, 0f);
         Arms = new Item("Nothing", Type.Arms, 0f, 0f, 0f, 0f, 0f, 0f);
@@ -78,12 +79,39 @@ public class Inventory : MonoBehaviour
             if(isDisable)
             {
                 canvas.enabled = true;
+                Cursor.visible = true;
             }
             else
             {
                 canvas.enabled = false;
+                GameObject.Find("Inspector").GetComponent<Canvas>().enabled = false;
+                Cursor.visible = false;
             }
             isDisable = !isDisable;
         }
 	}
+    public Item getItem(Type t)
+    {
+        switch(t)
+        {
+            case Type.Head:
+                return Head;
+            case Type.Chest:
+                return Chest;
+            case Type.Arms:
+                return Arms;
+            case Type.Legs:
+                return Legs;
+            case Type.Feet:
+                return Feet;
+            case Type.Melee:
+                return Melee;
+            case Type.Ring:
+                return Ring;
+            case Type.Necklace:
+                return Necklace;
+            default:
+                return null;
+        }
+    }
 }
