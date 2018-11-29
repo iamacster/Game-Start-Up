@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class InspectItem : MonoBehaviour
 {
@@ -9,12 +10,14 @@ public class InspectItem : MonoBehaviour
     Image image;
     Inventory inv;
     Canvas canvas;
+    GameObject insp;
     
     void Start ()
     {
+        insp = GameObject.Find("Inspector");
+        canvas = insp.GetComponent<Canvas>();
         image = GameObject.Find("inspImage").GetComponent<Image>();
         inv = GameObject.Find("InventoryArmor").GetComponent<Inventory>();
-        canvas = GameObject.Find("Inspector").GetComponent<Canvas>();
     }
 	
 	void Update ()
@@ -22,6 +25,7 @@ public class InspectItem : MonoBehaviour
 		if(canvas.enabled)
         {
             image.sprite = inv.getItem(inspect).sprite;
+            GameObject.Find("inspName").GetComponent<TextMeshProUGUI>().text = inv.getItem(inspect).name;
         }
 	}
 }

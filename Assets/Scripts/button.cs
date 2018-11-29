@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class button : MonoBehaviour {
-    
-    public void obp()
+public class button : MonoBehaviour
+{
+    public void closeInspector()
     {
-        switch (transform.parent.name)
+        GameObject.Find("Inspector").GetComponent<Canvas>().enabled = false;
+    }
+    public void obp(string t)
+    {
+        switch (t)
         {
             case "Head":
                 GameObject.Find("inspector").GetComponent<InspectItem>().inspect = Type.Head;
@@ -37,6 +41,7 @@ public class button : MonoBehaviour {
                 GameObject.Find("Inspector").GetComponent<Canvas>().enabled = true;
                 break;
         }
+    }
 	void Start ()
     {
         
