@@ -20,6 +20,10 @@ public class button : MonoBehaviour
                 GameObject.Find("inspector").GetComponent<InspectItem>().inspect = Type.Chest;
                 GameObject.Find("Inspector").GetComponent<Canvas>().enabled = true;
                 break;
+            case "Arms":
+                GameObject.Find("inspector").GetComponent<InspectItem>().inspect = Type.Arms;
+                GameObject.Find("Inspector").GetComponent<Canvas>().enabled = true;
+                break;
             case "Legs":
                 GameObject.Find("inspector").GetComponent<InspectItem>().inspect = Type.Legs;
                 GameObject.Find("Inspector").GetComponent<Canvas>().enabled = true;

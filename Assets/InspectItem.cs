@@ -26,6 +26,12 @@ public class InspectItem : MonoBehaviour
         {
             image.sprite = inv.getItem(inspect).sprite;
             GameObject.Find("inspName").GetComponent<TextMeshProUGUI>().text = inv.getItem(inspect).name;
+            GameObject.Find("inspHealth").GetComponent<TextMeshProUGUI>().text = inv.getItem(inspect).health.ToString();
+            GameObject.Find("inspAira").GetComponent<TextMeshProUGUI>().text = inv.getItem(inspect).aira.ToString();
+            GameObject.Find("inspStrength").GetComponent<TextMeshProUGUI>().text = inv.getItem(inspect).strength.ToString();
+            GameObject.Find("inspDefense").GetComponent<TextMeshProUGUI>().text = inv.getItem(inspect).defense.ToString();
+            GameObject.Find("inspWill").GetComponent<TextMeshProUGUI>().text = inv.getItem(inspect).will.ToString();
+            GameObject.Find("inspEndurance").GetComponent<TextMeshProUGUI>().text = inv.getItem(inspect).endurance.ToString();
         }
 	}
 }
